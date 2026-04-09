@@ -1,0 +1,22 @@
+setuptools
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+xgboost
+nltk
+pickle
+flask
+requests
+beautifulsoup4
+lxml
+selenium
+python-dotenv
+pyyaml
+transformers
+torch
+requests
+beautifulsoup4
+
+-e .
