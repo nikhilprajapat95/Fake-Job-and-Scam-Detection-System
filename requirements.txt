@@ -18,5 +18,5 @@ transformers
 torch
 requests
 beautifulsoup4
-
+pymongo
 -e .

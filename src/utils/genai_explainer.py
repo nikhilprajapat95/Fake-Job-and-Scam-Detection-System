@@ -1,16 +1,16 @@
 import requests
 
-def generate_explanation(job_text, prediction):
+def generate_explanation(text, prediction):
 
     label = "Fake Job" if prediction == 1 else "Real Job"
 
     prompt = f"""
-    Analyze the following job posting and explain why it is {label}.
+    Analyze the job posting and explain why it is {label}.
     
     Job Description:
-    {job_text}
+    {text}
     
-    Give a short and clear explanation.
+    Give a short explanation.
     """
 
     response = requests.post(
@@ -22,5 +22,4 @@ def generate_explanation(job_text, prediction):
         }
     )
 
-    result = response.json()
-    return result['response']
+    return response.json()["response"]
